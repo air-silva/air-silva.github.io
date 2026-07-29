@@ -278,6 +278,16 @@ nav ul li a:hover::after {
     color: var(--white-color);
 }
 
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-card-link:hover .project-card {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
 
 /* --- 6. Tabular Skills Section --- */
 #skills .container {
