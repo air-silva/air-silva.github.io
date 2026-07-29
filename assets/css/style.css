@@ -780,3 +780,113 @@ height:34px;
 .segment6{top:75px;left:28px;}
 
 }
+
+/* -------------------------
+   Contact Section
+--------------------------*/
+
+.contact-intro{
+    max-width:700px;
+    margin:0 auto 50px;
+    text-align:center;
+    color:var(--light-text-color);
+    font-size:1.05rem;
+}
+
+.contact-card{
+
+    max-width:700px;
+    margin:0 auto;
+
+    background:var(--white-color);
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+}
+
+.contact-item{
+
+    display:flex;
+    align-items:center;
+
+    gap:20px;
+
+    padding:20px 0;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.contact-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.contact-item i{
+
+    width:60px;
+    height:60px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--accent-color);
+
+    color:white;
+
+    font-size:1.4rem;
+
+    flex-shrink:0;
+
+}
+
+.contact-item h3{
+
+    margin-bottom:5px;
+
+    color:var(--primary-color);
+
+    font-family:var(--font-heading);
+
+}
+
+.contact-item a{
+
+    color:var(--secondary-color);
+
+    font-weight:600;
+
+}
+
+.contact-item a:hover{
+
+    color:var(--accent-color);
+
+}
+
+@media(max-width:768px){
+
+.contact-card{
+
+padding:25px;
+
+}
+
+.contact-item{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
+
