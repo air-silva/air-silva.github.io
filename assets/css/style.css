@@ -560,3 +560,79 @@ footer p {
         padding-bottom: 30px;
     }
 }
+
+/* Reflective Practice Section */
+.circle-wrapper {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.circle-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+}
+
+.circle-segment {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+.circle-segment i {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+    color: var(--accent-color);
+}
+
+/* Positioning the 6 segments around the circle */
+.seg1 { top: 0; left: 50%; transform: translateX(-50%); }
+.seg2 { top: 18%; right: 0; transform: translateY(-50%); }
+.seg3 { top: 50%; right: 0; transform: translateY(-50%); }
+.seg4 { bottom: 0; left: 50%; transform: translateX(-50%); }
+.seg5 { top: 50%; left: 0; transform: translateY(-50%); }
+.seg6 { top: 18%; left: 0; transform: translateY(-50%); }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .circle-wrapper {
+        width: 320px;
+        height: 320px;
+    }
+    .circle-segment {
+        width: 90px;
+        height: 90px;
+        font-size: 0.75rem;
+    }
+    .circle-center {
+        width: 120px;
+        height: 120px;
+        font-size: 1rem;
+    }
+}
+
